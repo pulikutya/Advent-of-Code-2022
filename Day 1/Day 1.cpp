@@ -5,11 +5,12 @@
 int main()
 {
     std::ifstream input("input.txt");
-    unsigned int first3max[3] { 0, 0, 0 };
+    
     if (input)
     {
         std::string crnString;
         unsigned int crnSum = 0;
+        unsigned int first3max[3] { 0, 0, 0 };
         while (std::getline(input, crnString))
         {
             if (crnString.empty())
