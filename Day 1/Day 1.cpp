@@ -5,7 +5,6 @@
 int main()
 {
     std::ifstream input("input.txt");
-    
     if (input)
     {
         std::string crnString;
