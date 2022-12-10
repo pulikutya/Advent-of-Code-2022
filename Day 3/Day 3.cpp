@@ -8,15 +8,6 @@ inline char getPriority(char v)
     else if (v >= 'A' && v <= 'Z') return v - 'A' + 27;
 }
 
-inline char findDuplicate(std::string a, std::string b)
-{
-    for (unsigned long long int i = 0; i < a.length(); i++)
-    {
-        if (b.find(a[i]) != std::string::npos) { return a[i]; }
-    }
-    throw std::exception();
-}
-
 int main()
 {
     std::ifstream input("input.txt");
