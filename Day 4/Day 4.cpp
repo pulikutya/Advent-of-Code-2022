@@ -8,7 +8,7 @@ int main()
     if (input)
     {
         std::string crnString;
-        int sum1 = 0, sum2 = 0;
+        int ans1 = 0, ans2 = 0;
         int iv[2][2];
 
         while (std::getline(input, crnString))
@@ -24,17 +24,17 @@ int main()
 
             if ((iv[0][0] <= iv[1][0] && iv[0][1] >= iv[1][1]) || (iv[0][0] >= iv[1][0] && iv[0][1] <= iv [1][1]))            
             {
-                sum1++;
-                sum2++;
+                ans1++;
+                ans2++;
             }
             else if ((iv[0][0] <= iv[1][0] && iv[0][1] >= iv[1][0]) || (iv[0][0] <= iv[1][1] && iv[0][1] >= iv[1][1])) 
             {
-                sum2++;
+                ans2++;
             }
         }
 
-        std::cout << "Part One: " << sum1 << std::endl;
-        std::cout << "Part Two: " << sum2 << std::endl;
+        std::cout << "Part One: " << ans1 << std::endl;
+        std::cout << "Part Two: " << ans2 << std::endl;
     }
     if (input.is_open()) input.close();
     std::cout << std::endl;

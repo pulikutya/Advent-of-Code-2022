@@ -14,7 +14,7 @@ int main()
     if (input)
     {
         std::string crnString;
-        int sum1 = 0, sum2 = 0;
+        int ans1 = 0, ans2 = 0;
         std::string g3[3] = { std::string(), std::string(), std::string() };
         unsigned char gi = 0;
         while (std::getline(input, crnString))
@@ -25,7 +25,7 @@ int main()
             {
                 if (s2.find(s1[i]) != std::string::npos) 
                 { 
-                    sum1 += (int)getPriority(s1[i]); break;
+                    ans1 += (int)getPriority(s1[i]); break;
                 }
             }
 
@@ -36,15 +36,15 @@ int main()
                 {
                     if (g3[1].find(g3[0][i]) != std::string::npos && g3[2].find(g3[0][i]) != std::string::npos)
                     { 
-                        sum2 += (int)getPriority(g3[0][i]); break;
+                        ans2 += (int)getPriority(g3[0][i]); break;
                     }
                 }
             }
             else gi++;
         }
 
-        std::cout << "Part One: " << sum1 << std::endl;
-        std::cout << "Part Two: " << sum2 << std::endl;
+        std::cout << "Part One: " << ans1 << std::endl;
+        std::cout << "Part Two: " << ans2 << std::endl;
     }
     if (input.is_open()) input.close();
     std::cout << std::endl;
