@@ -22,8 +22,8 @@ int main()
             else crnSum += std::stoi(crnString);
         }
 
-        std::cout << "Part One: " << first3max[2] << std::endl;
-        std::cout << "Part Two: " << first3max[0] + first3max[1] + first3max[2] << std::endl;
+        std::cout << "Part One: " << first3max[2] << std::endl
+                  << "Part Two: " << first3max[0] + first3max[1] + first3max[2] << std::endl;
     }
     if (input.is_open()) input.close();
     std::cout << std::endl;

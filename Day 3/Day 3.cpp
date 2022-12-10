@@ -43,8 +43,8 @@ int main()
             else gi++;
         }
 
-        std::cout << "Part One: " << ans1 << std::endl;
-        std::cout << "Part Two: " << ans2 << std::endl;
+        std::cout << "Part One: " << ans1 << std::endl 
+                  << "Part Two: " << ans2 << std::endl;
     }
     if (input.is_open()) input.close();
     std::cout << std::endl;
